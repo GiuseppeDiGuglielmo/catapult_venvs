@@ -7,7 +7,7 @@ In particular, you need `MGC_HOME` and
 export PATH=${MGC_HOME}/bin:${PATH}
 ```
 
-Check if the Python executable in from the Catapult installation directory:
+Check if the Python executable comes from the Catapult installation directory:
 ```
 which python3
 ```
