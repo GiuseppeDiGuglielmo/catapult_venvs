@@ -1,5 +1,14 @@
-# HOWTO
+# Catapult 2024.2
 
+## Linux distros
+
+These scripts were tested with the following Linux distributions:
+- Fedora 8.10 ([requirements.txt](requirements.txt))
+- AlmaLinux 9.4 ([requirements.txt](requirements.txt))
+- Ubuntu 22.04 ([requirements.txt](requirements.txt))
+- ScientificLinux 7.9 ([requirements-sl-7.9.txt](requirements-sl-7.9.txt))
+
+## How to
 Export Cataput environment variables and tools. 
 
 In particular, you need `MGC_HOME` and 
