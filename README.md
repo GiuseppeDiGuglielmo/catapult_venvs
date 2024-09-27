@@ -1,1 +1,1 @@
-# Create Python Virtual Environments for Catapult AI NN
+# Create Python Virtual Env for Catapult AI NN
