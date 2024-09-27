@@ -8,19 +8,33 @@ These scripts were tested with the following Linux distributions:
 - Ubuntu 22.04 ([requirements.txt](requirements.txt))
 - ScientificLinux 7.9 ([requirements-sl-7.9.txt](requirements-sl-7.9.txt))
 
-## How to
-Export Cataput environment variables and tools. 
+## Setup environment variables
 
-In particular, you need `MGC_HOME` and 
+To create the Python virtual environment, you will use the Python binaries and libraries provided by Catapult. Thus, you need to export Cataput environment variables and tools. It greatly depends on your local configuration, and you may need to check with your system administrator.
+
+In particular, you need the `MGC_HOME` environment variable defined in your Linux shell. You can check it with
+```
+echo $MGC_HOME
+```
+It should point to your local installation of Catapult, for example, `/tools/Siemens/catapult/2024.2/Mgc_home`. 
+
+If empty, you can define it, for example:
+```
+export MGC_HOME=/tools/Siemens/catapult/2024.2/Mgc_home # make it sure to use your installation path
+```
+
+You also need the directory with Catapult binaries to be at the top of your `PATH` variable:
 ```
 export PATH=${MGC_HOME}/bin:${PATH}
 ```
 
-Check if the Python executable comes from the Catapult installation directory:
+Finally, check if the Python executable comes from the Catapult installation directory:
 ```
 which python3
 ```
-That should be `${MGC_HOME}/bin/python3`.
+That should be something like `/tools/Siemens/catapult/2024.2/Mgc_home/bin/python3`; if instead, it is `/usr/bin/python`, then either `PATH` or `MGC_HOME` are not properly set.
+
+## Create the Python virtual environment
 
 Finally, run the following script:
 ```
