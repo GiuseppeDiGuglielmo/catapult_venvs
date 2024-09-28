@@ -55,3 +55,16 @@ If the process fails, you will get:
 ```
 HLS4ML install failed
 ```
+
+## Other issues
+
+If you get the following error when running an `hls4ml` design in Catapult AI NN
+```
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+```
+
+Add the variable `LIBRARY_PATH` to the file `$MGC_HOME/shared/pkgs/ccs_hls4ml/hls4ml/hls4ml/templates/catapult/build_lib.sh`:
+```
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
+    ${CC} ${CFLAGS} ${INCFLAGS} -shared ${PROJECT}.o ${PROJECT}_bridge.o -o firmware/${PROJECT}-${LIB_STAMP}.so
+```
