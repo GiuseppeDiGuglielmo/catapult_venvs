@@ -1,5 +1,9 @@
 # Catapult 2024.2
 
+## Tool dependencies
+
+Please check the documentation and list of dependencies that Catapult requires (`$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`).
+
 ## Linux distros
 
 These scripts have been tested with the following Linux distributions:
