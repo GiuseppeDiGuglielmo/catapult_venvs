@@ -7,6 +7,7 @@ These scripts have been tested with the following Linux distributions:
 - AlmaLinux 9.4 ([requirements.txt](requirements.txt))
 - Ubuntu 22.04 ([requirements.txt](requirements.txt))
 - ScientificLinux 7.9 ([requirements-sl-7.9.txt](requirements-sl-7.9.txt))
+- CentOS 7 ([requirements-centos-7.txt](requirements-centos-7.txt))
 
 ## Setup of the environment variables (to create a Python virtual env)
 
@@ -36,7 +37,14 @@ That should return something like `/tools/Siemens/catapult/2024.2/Mgc_home/bin/p
 
 ## Create the Python virtual environment
 
-Finally, run the following script:
+Edit `create_env.sh` given the Linux distribution. You can comment/uncomment the correct requirements file given the distribution you are running (see beginning of the page).
+```
+REQUIREMENTS_TXT=$PWD/requirements.txt
+#REQUIREMENTS_TXT=$PWD/requirements-centos-7.txt
+#REQUIREMENTS_TXT=$PWD/requirements-sl-7.9.txt
+```
+
+Then, run the following script:
 ```
 ./create_env.sh python3 $HOME/ccs_venv
 ```

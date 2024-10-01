@@ -3,7 +3,9 @@
 PYTHON=$1
 VENV=$2
 
-REQUIREMENTS_TXT=$PWD/requirements.txt
+#REQUIREMENTS_TXT=$PWD/requirements.txt
+REQUIREMENTS_TXT=$PWD/requirements-centos-7.txt
+#REQUIREMENTS_TXT=$PWD/requirements-sl-7.9.txt
 
 export PYTHONPATH=
 
