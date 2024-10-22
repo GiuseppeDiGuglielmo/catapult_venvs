@@ -155,3 +155,4 @@ export VERDI_HOME=PATH_TO_NOVAS_VERDI
 
 If you are running Catapult in the GUI model, you can configure `Tools >> Set Options... >> Flows >> Novas >> Path` to point to the Novas Verdi installation directory.
 
+### Issues with `saed32rvt_tt0p78v125c_beh.lib`
