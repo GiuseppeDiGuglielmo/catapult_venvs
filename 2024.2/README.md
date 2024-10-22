@@ -2,9 +2,15 @@
 
 ## Tool dependencies
 
-Please check the documentation and list of dependencies that Catapult requires (`$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`).
+Please check the documentation and dependencies that Catapult requires (`$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`). In particular, you need
 
-A list of [known issues](#known-issues) due to missing dependencies and their solution is provided in this document.
+- Updated license server (SALTD)
+- Siemens Catapult 2024.2
+- Siemens QuestaSim 2023.2
+- Synopsys Novas/Verdi R-2020.12
+- Synopsys SAED32nm_PDK_02_2024 (in particular the liberty file saed32rvt_tt0p78v125c_beh.lib)
+
+This document provides a list of [known issues](#known-issues) due to missing dependencies and their solutions.
 
 ## Linux distros
 
