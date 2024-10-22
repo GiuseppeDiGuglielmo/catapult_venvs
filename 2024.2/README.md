@@ -118,7 +118,40 @@ If you get the following error when running an `hls4ml` design in Catapult AI NN
 
 Make sure that QuestaSIM (`vsim`) is in the path:
 ```
-export PATH=$QUESTASIM/bin/
+export MODEL_TECH=PATH_TO_QUESTASIM/bin
+export PATH=$MODEL_TECH:$PATH
 ```
 
-### `?`
+If you are running Catapult in the GUI model, you can configure `Tools >> Set Options... >> Flows >> QuestaSIM >> Path` to point to the `bin` directory in the QuestaSIM installation.
+
+### `/share/PLI/MODELSIM/LINUX64/novas_fli.so: cannot open shared object file`
+
+If you get the following error when running an `hls4ml` design in Catapult AI NN
+```
+# Loading /share/PLI/MODELSIM/LINUX64/novas_fli.so
+# Error: (suppressible): (vsim-3197) Load of "/share/PLI/MODELSIM/LINUX64/novas_fli.so" failed: /share/PLI/MODELSIM/LINUX64/novas_fli.so: cannot open shared object file: No such file or directory.
+# Error: (suppressible): (vsim-PLI-3002) Failed to load PLI object file "/share/PLI/MODELSIM/LINUX64/novas_fli.so".
+# Time: 0 ps  Iteration: 0  Root: /
+# Error: loading design
+# Error: loading design
+# End time: 23:18:28 on Oct 21,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0, Suppressed Warnings: 1
+# Error: make: *** [sim] Error 12
+# Info: SCVerify complete for use mode default
+# Error: Switching Activity File 'my-Catapult-test_asic1/myproject_prj/myproject.v1/switching_vhdl/default.fsdb' was not found after simulation
+# Error:      The lack of a file is usually caused by compile errors in SCVerify
+# Info: Completed transformation 'prototyping' on solution 'myproject.v1': elapsed time 13.60 seconds, memory usage 1572860kB, peak memory usage 1572924kB (SOL-9)
+# Info: Design complexity at end of 'prototyping': Total ops = 1513, Real ops = 609, Vars = 621 (SOL-21)
+# Error: errors encountered while running flows, check $errorInfo for more details
+# Error: Switching Activity File not found after simulation
+# Error: Package: PowerAnalysis, Version: 8.0a, Flow: switching
+# Error: Script: $MGC_HOME/pkgs/sif/userware/En_na/flows/app_poweranalysis.flo ...
+```
+
+Make sure that Novas/Verdi variable is defined:
+```
+export VERDI_HOME=PATH_TO_NOVAS_VERDI
+```
+
+If you are running Catapult in the GUI model, you can configure `Tools >> Set Options... >> Flows >> Novas >> Path` to point to the Novas Verdi installation directory.
+
