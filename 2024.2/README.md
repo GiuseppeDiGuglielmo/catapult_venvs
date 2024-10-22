@@ -109,6 +109,16 @@ LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
     ${CC} ${CFLAGS} ${INCFLAGS} -shared ${PROJECT}.o ${PROJECT}_bridge.o -o firmware/${PROJECT}-${LIB_STAMP}.so
 ```
 
-### `?`
+### `No QuestaSIM installation found`
+
+If you get the following error when running an `hls4ml` design in Catapult AI NN
+```
+# $MGC_HOME/shared/include/mkfiles/ccs_questasim.mk:164: *** No QuestaSIM installation found. Check your QuestaSIM flow Path option in Catapult.  Stop.
+```
+
+Make sure that QuestaSIM (`vsim`) is in the path:
+```
+export PATH=$QUESTASIM/bin/
+```
 
 ### `?`
