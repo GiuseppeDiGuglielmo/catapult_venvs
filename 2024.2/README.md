@@ -9,7 +9,7 @@ Please check the documentation and list of dependencies that Catapult requires (
 These scripts have been tested with the following Linux distributions:
 - Fedora 8.10 ([requirements.txt](requirements.txt))
 - AlmaLinux 9.4 ([requirements.txt](requirements.txt))
-- Ubuntu 22.04 ([requirements.txt](requirements.txt))
+- Ubuntu 20.04, 22.04 ([requirements.txt](requirements.txt))
 - ScientificLinux 7.9 ([requirements-sl-7.9.txt](requirements-sl-7.9.txt))
 - CentOS 7 ([requirements-centos-7.txt](requirements-centos-7.txt))
 
