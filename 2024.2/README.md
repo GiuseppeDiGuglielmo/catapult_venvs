@@ -8,7 +8,7 @@ Please check the documentation and dependencies that Catapult requires (`$MGC_HO
 - Siemens Catapult 2024.2
 - Siemens QuestaSim 2023.2
 - Synopsys Novas/Verdi R-2020.12
-- Synopsys SAED32nm_PDK_02_2024 (in particular the liberty file saed32rvt_tt0p78v125c_beh.lib)
+- Synopsys SAED32nm_PDK_02_2024
 
 This document provides a list of [known issues](#known-issues) due to missing dependencies and their solutions.
 
