@@ -4,6 +4,8 @@
 
 Please check the documentation and list of dependencies that Catapult requires (`$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`).
 
+A list of [known issues](#known-issues) due to missing dependencies and their solution is provided in this document.
+
 ## Linux distros
 
 These scripts have been tested with the following Linux distributions:
