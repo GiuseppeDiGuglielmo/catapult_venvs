@@ -100,7 +100,7 @@ If you notice any errors, please check the following solutions to known issues.
 
 ### `cannot find crt*.o: No such file or directory`
 
-If you get the following error when running an `hls4ml` design in Catapult AI NN
+If you get the following (or similar) error when running an `hls4ml` design in Catapult AI NN
 ```
 /usr/bin/ld: cannot find crt1.o: No such file or directory
 ```
