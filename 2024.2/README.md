@@ -84,7 +84,7 @@ Run one of the hls4ml / Catapult AI NN examples provided with Catapult AI NN.
 
 First:
 ```
-PYTHONPATH=$MGC_HOME/shared/pkgs/ccs_hls4ml/hls4ml python $MGC_HOME/shared/examples/hls4ml/Simple/model.py --reuse_factor=1
+PYTHONPATH=$MGC_HOME/shared/pkgs/ccs_hls4ml/hls4ml python $MGC_HOME/shared/examples/hls4ml/Simple/model_asic.py --reuse_factor=1
 ```
 
 Then:
