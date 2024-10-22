@@ -68,7 +68,35 @@ If the process fails, you will get:
 HLS4ML install failed
 ```
 
-## Other issues
+## Testing your setup
+
+Make sure the following tools and libraries are installed besides Catapult 2024.2:
+- Siemens QuestaSim 2023.2
+- Synopsys Novas/Verdi R-2020.12
+- Synopsys SAED32nm_PDK_02_2024
+
+Activate the Python environment previously created:
+```
+source $HOME/ccs_venv/bin/activate
+```
+
+Run one of the hls4ml / Catapult AI NN examples provided with Catapult AI NN.
+
+First:
+```
+PYTHONPATH=$MGC_HOME/shared/pkgs/ccs_hls4ml/hls4ml python $MGC_HOME/shared/examples/hls4ml/Simple/model.py --reuse_factor=1
+```
+
+Then:
+```
+cd my-Catapult-test1; catapult -shell -file build_prj.tcl
+```
+
+If you notice any errors, please check the following solutions to known issues.
+
+## Known issues
+
+### `cannot find crt*.o: No such file or directory`
 
 If you get the following error when running an `hls4ml` design in Catapult AI NN
 ```
@@ -80,3 +108,7 @@ Add the variable `LIBRARY_PATH` to the file `$MGC_HOME/shared/pkgs/ccs_hls4ml/hl
 LIBRARY_PATH=/usr/lib/x86_64-linux-gnu \
     ${CC} ${CFLAGS} ${INCFLAGS} -shared ${PROJECT}.o ${PROJECT}_bridge.o -o firmware/${PROJECT}-${LIB_STAMP}.so
 ```
+
+### `?`
+
+### `?`
