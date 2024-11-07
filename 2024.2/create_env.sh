@@ -1,6 +1,6 @@
 #! /bin/bash
 
-if [ $# != 3 ]; then
+if [ $# != 2 ]; then
     echo "ERROR: Usage:"
     echo "       $0 python3 \$HOME/ccs_venv"
 else
