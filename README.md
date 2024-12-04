@@ -1,6 +1,12 @@
-# Workstation Setup for Catapult AI NN
+# Workstation Setup for Siemens Catapult AI NN
 
-This repository provides help for setting up Catapult AI NN, including scripts for creating Python virtual environments and applying hotfixes.
+When installing Catapult (AI NN) your main reference should be the official documentation on the Siemens software download portal or in your local installation directory (`$MGC_HOME`). Please refer to:
+
+- `$MGC_HOME/shared/pdfdocs/catapult_install.pdf`
+- `$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`
+  - In particular, check the Software Compatibility section.
+
+In addition to the official support, this repository provides help for setting up Catapult (AI NN), including scripts for creating Python virtual environments and instructions to apply hotfixes.
 
 A Python virtual environment is typically created once, the first time you run a Catapult AI NN project. By default, Catapult AI NN places the environment in your home directory under the `ccs_venv` subdirectory (`$HOME/ccs_venv`). The default scripts may fail on some Linux distributions, and this repository provides fixes for those cases.
 
