@@ -11,7 +11,7 @@
     - [`cannot find crt*.o: No such file or directory`](#cannot-find-crto-no-such-file-or-directory)
     - [`No QuestaSIM installation found`](#no-questasim-installation-found)
     - [`/share/PLI/MODELSIM/LINUX64/novas_fli.so: cannot open shared object file`](#shareplimodelsimlinux64novas_fliso-cannot-open-shared-object-file)
-    - [Issues with `saed32rvt_tt0p78v125c_beh.lib`](#issues-with-saed32rvt_tt0p78v125c_behlib)
+    - [Issues with `saed32rvt_tt0p78v125c.lib`](#issues-with-saed32rvt_tt0p78v125clib)
 
 <!-- vim-markdown-toc -->
 
@@ -180,4 +180,16 @@ export VERDI_HOME=PATH_TO_NOVAS_VERDI
 
 If you are running Catapult in the GUI model, you can configure `Tools >> Set Options... >> Flows >> Novas >> Path` to point to the Novas Verdi installation directory.
 
-### Issues with `saed32rvt_tt0p78v125c_beh.lib`
+### Issues with `saed32rvt_tt0p78v125c.lib`
+
+If you get an error and Catapult cannot find `saed32rvt_tt0p78v125c.lib`:
+
+1. Make sure you have installed the _Synopsys SAED32nm PDK_;
+2. Make sure you have properly exported the `SAED32_EDK` environment variable:
+   ```
+   export SAED32_EDK=PATH_TO_SYNOPSYS_SAED32_EDK
+   ```
+3. At _line 28_ of the script `$MGC_HOME/pkgs/siflibs/saed/setup_saedlib.tcl` add:
+   ```
+   options set ComponentLibs/TechLibSearchPath [file join $::env(SAED32_EDK) lib stdcell_rvt SAED32_EDK lib stdcell_rvt db_ccs] -append   
+   ```
