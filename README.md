@@ -1,6 +1,6 @@
 # Workstation Setup for Siemens Catapult AI NN
 
-When installing [Siemens Catapult](https://newsroom.sw.siemens.com/en-US/siemens-catapult-ai-nn/) your main reference should be the official documentation on the [Siemens software download portal](https://support.sw.siemens.com/en-US/product/886857312/downloads) or in your local installation directory (`$MGC_HOME`). Please refer to:
+When installing [Siemens Catapult AI NN](https://newsroom.sw.siemens.com/en-US/siemens-catapult-ai-nn/) your main reference should be the official documentation on the [Siemens software download portal](https://support.sw.siemens.com/en-US/product/886857312/downloads) or in your local installation directory (`$MGC_HOME`). Please refer to:
 
 - `$MGC_HOME/shared/pdfdocs/catapult_install.pdf`
 - `$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`
