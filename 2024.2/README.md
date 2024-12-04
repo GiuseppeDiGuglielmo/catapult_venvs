@@ -20,7 +20,7 @@
 Please check the documentation and dependencies that Catapult requires (`$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`). In particular, you need
 
 - Updated license server (SALTD)
-- Siemens Catapult 2024.2
+- [Siemens Catapult 2024.2](https://support.sw.siemens.com/en-US/product/886857312/download/202407026)
 - Siemens QuestaSim 2023.2
 - Synopsys Novas/Verdi R-2020.12
 - Synopsys SAED32nm_PDK_02_2024
