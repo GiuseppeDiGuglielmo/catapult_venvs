@@ -1,5 +1,20 @@
 # Catapult 2024.2_1
 
+<!-- vim-markdown-toc GFM -->
+
+* [Tool dependencies](#tool-dependencies)
+* [Linux distros](#linux-distros)
+* [Setup of the environment variables (to create a Python virtual env)](#setup-of-the-environment-variables-to-create-a-python-virtual-env)
+* [Create the Python virtual environment](#create-the-python-virtual-environment)
+* [Testing your setup](#testing-your-setup)
+* [Known issues](#known-issues)
+    - [`cannot find crt*.o: No such file or directory`](#cannot-find-crto-no-such-file-or-directory)
+    - [`No QuestaSIM installation found`](#no-questasim-installation-found)
+    - [`/share/PLI/MODELSIM/LINUX64/novas_fli.so: cannot open shared object file`](#shareplimodelsimlinux64novas_fliso-cannot-open-shared-object-file)
+    - [Issues with `saed32rvt_tt0p78v125c_beh.lib`](#issues-with-saed32rvt_tt0p78v125c_behlib)
+
+<!-- vim-markdown-toc -->
+
 ## Tool dependencies
 
 Please check the documentation and dependencies that Catapult requires (`$MGC_HOME/shared/pdfdocs/catapult_relnotes.pdf`). In particular, you need
